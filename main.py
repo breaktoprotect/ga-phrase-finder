@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def main():
     population_size = 2000 # Per generation
     mutation_rate   = 0.01 
-    target_phrase = "it is a good day to die"
+    target_phrase = "Hello world"
     phraser = Phrase(target_phrase=target_phrase, population=population_size, mutation_rate=mutation_rate)
 
     # For graph visualization
@@ -29,6 +29,7 @@ def main():
         if i % 1 == 0 and i != 0:
             plt.pause(0.001)
 
+    plt.show()
 
 if __name__ == "__main__":
     main()
